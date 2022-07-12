@@ -1,8 +1,17 @@
 # Gitlet Design Document
 
-**Name**:
+**Name**: Joe Li		
 
 ## Classes and Data Structures
+
+###Commit 
+
+####Instance variable
+* Message - contains the message of a commit 
+* TimeStamp - time at which a commit was created. Assigned by the constructor 
+* Parent - parent commit of a commit object  
+* Member blobs 
+
 
 ### Class 1
 
