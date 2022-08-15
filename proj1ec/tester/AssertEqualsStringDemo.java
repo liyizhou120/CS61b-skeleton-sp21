@@ -2,7 +2,7 @@ package tester;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import edu.princeton.cs.introcs.StdRandom;
+import edu.princeton.cs.algs4.StdRandom;
 /** Demos the version of assertEquals with a String message. */
 public class AssertEqualsStringDemo {
     @Test
@@ -16,6 +16,6 @@ public class AssertEqualsStringDemo {
 
     /** This main method is optional. */
     public static void main(String[] args) {
-        jh61b.junit.TestRunner.runTests(AssertEqualsStringDemo.class);
+        //jh61b.junit.TestRunner.runTests(AssertEqualsStringDemo.class);
     }
 } 
