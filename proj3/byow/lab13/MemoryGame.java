@@ -37,6 +37,7 @@ public class MemoryGame {
         long seed = Long.parseLong(args[0]);
         MemoryGame game = new MemoryGame(40, 40, seed);
         game.startGame();
+        System.out.println(game.generateRandomString(4));
     }
 
     public MemoryGame(int width, int height, long seed) {
@@ -52,18 +53,30 @@ public class MemoryGame {
         StdDraw.setYscale(0, this.height);
         StdDraw.clear(Color.BLACK);
         StdDraw.enableDoubleBuffering();
-
+        this.rand = new Random(seed);
+        
         //TODO: Initialize random number generator
     }
 
     public String generateRandomString(int n) {
         //TODO: Generate random string of letters of length n
-        return null;
+    	char[] newCharArray = new char[n + 1]; 
+    	for(int i = 0; i < n ; i++) {
+    		int next = rand.nextInt();
+    		newCharArray[i] = CHARACTERS[next];
+    	}
+    	
+    	String randomString = newCharArray.toString();
+    	
+        return randomString;
     }
 
     public void drawFrame(String s) {
         //TODO: Take the string and display it in the center of the screen
         //TODO: If game is not over, display relevant game information at the top of the screen
+    	
+    	
+    	
     }
 
     public void flashSequence(String letters) {
