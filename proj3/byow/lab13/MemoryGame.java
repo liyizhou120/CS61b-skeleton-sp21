@@ -123,12 +123,14 @@ public class MemoryGame {
         drawFrame(input);
     	
         while(input.length() < n) {
-        	if(!StdDraw.hasNextKeyTyped()) {
-        		continue; 
-        	}
+//        	if(!StdDraw.hasNextKeyTyped()) {
+//        		continue; 
+//        	}
+          if(StdDraw.hasNextKeyTyped()) {
         	char key = StdDraw.nextKeyTyped();
         	input += String.valueOf(key);
         	drawFrame(input); 
+          }
         }
         
         StdDraw.pause(500);
