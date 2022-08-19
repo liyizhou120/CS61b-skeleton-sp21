@@ -12,8 +12,11 @@ public class HallWay {
 	private HallWay incidentHallWay; 
 	
 	
-	
 	public enum Direction{
-		North, East, South, West, 
+		NORTH, EAST, SOUTH, WEST;
 	}
+	
+	
+	
+	
 }
