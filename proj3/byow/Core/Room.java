@@ -13,10 +13,10 @@ public class Room {
 	private static final int ROOM_MIN_SIZE = 5; 
 	private static final int ROOM_NUM = 100; 
 	
-    private int xPos;
-    private int yPos;
-    private int width; 
-    private int height; 
+    public int xPos;
+    public int yPos;
+    public int width; 
+    public int height; 
     private Random random;
     private static ArrayList<Room> Rooms;
     private static TETile[][] positionOfRoom;
